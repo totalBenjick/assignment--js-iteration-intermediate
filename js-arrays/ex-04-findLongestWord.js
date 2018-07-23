@@ -43,7 +43,7 @@ function  findLongestWord(frase){
 
     }
     console.log(longestWord)
-    console.log("this was made by Travis, my answer is below");
+    //console.log("this was made by Travis, my answer is below");
 
     return longestWord
 

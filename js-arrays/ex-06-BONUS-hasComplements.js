@@ -15,14 +15,48 @@
 // ++ YOUR CODE below
 
 
+function hasComplements (num, arrayinput) {
+
+	var suma = 0;
+
+	var contador = 0;
+
+	for (var i=0; i<arrayinput.length; i++) {
+		var guarda1 = arrayinput[i]
+
+		for (var j=i+1; j<arrayinput.length; j++) {
+			var guarda2 = arrayinput[j];
+
+			suma = guarda1 + guarda2;
+
+			if(suma === num) {
+				contador ++
+			}
+		}
+	}
+
+	if (contador > 0) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+/*function hasComplements(corroborado,Things) {
+
+	var sumado = falso; 
+
+	for (var i = 0; i < Things.length; i++) {
+		var sumando = Things[i]
+		var sumandoUno = Things[i+1]
+		if (sumando + sumandoUno === corroborado) {
+
+		}
+	}
 
 
-
-
-
-
-
-
+}*/
+// vammos a hacer todas las sumas y luego a commpararlas, se pone [ i  + 1]
 
 // *~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
 // *~*~*~*~*~*~*~* Tests (Don't Touch) *~*~*~*~*~*~*~*~*
